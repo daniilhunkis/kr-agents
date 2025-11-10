@@ -1,38 +1,14 @@
 "use client";
+import Card from "./components/Card";
+import { motion } from "framer-motion";
 
-import { useEffect } from "react";
-
-export default function HomePage() {
-  useEffect(() => {
-    // Telegram WebApp API — настройка цветов
-    // @ts-ignore
-    if (window.Telegram?.WebApp) {
-      const tg = window.Telegram.WebApp;
-      tg.ready();
-      tg.expand();
-      tg.setHeaderColor("#2da5ff");
-      tg.setBackgroundColor("#ffffff");
-    }
-  }, []);
-
+export default function Page() {
   return (
-    <div style={{ padding: "24px" }}>
-      <h1 style={{ color: "#2da5ff", fontSize: "22px" }}>KR Agents</h1>
-      <p style={{ marginBottom: "20px", color: "#555" }}>
-        Добро пожаловать 👋<br />
-        Умное приложение для агентов недвижимости в Краснодаре.
-      </p>
-      <div className="card">
-        <h2>Мои объекты</h2>
-        <p>Просматривай, редактируй и делись объявлениями прямо из Telegram.</p>
-        <button>Открыть объекты</button>
-      </div>
-
-      <div className="card">
-        <h2>Заявки клиентов</h2>
-        <p>Следи за запросами, статусами и показывай нужные варианты быстрее.</p>
-        <button>Перейти к заявкам</button>
-      </div>
-    </div>
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
+      <h2 style={{ marginBottom: 16, color: "#2da5ff" }}>Главная</h2>
+      <Card>Добро пожаловать в KR Agents 🎯</Card>
+      <Card>Здесь будут появляться актуальные предложения и объекты</Card>
+      <Card>Вы можете перейти в раздел “Поиск”, чтобы найти клиентов или ЖК</Card>
+    </motion.div>
   );
 }
