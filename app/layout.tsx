@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "KR Agents",
-  description: "Mini-app для недвижимости",
+  description: "Мини-приложение для агентов",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -12,21 +12,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <script src="https://telegram.org/js/telegram-web-app.js"></script>
       </head>
-      <body style={{display:"flex",flexDirection:"column",minHeight:"100vh", background:"#fff"}}>
-        <main style={{flex:1}}>{children}</main>
-        <nav style={{
-          display:"flex",
-          gap:16,
-          justifyContent:"space-around",
-          borderTop:"1px solid #eee",
-          padding:"10px 12px",
-          background:"#f7f7f7"
-        }}>
-          <Link href="/">Главная</Link>
-          <Link href="/search">Поиск</Link>
-          <Link href="/showings">Показы</Link>
-          <Link href="/ads">Реклама</Link>
-          <Link href="/objects">Объекты</Link>
+      <body>
+        <main style={{ paddingBottom: "60px", minHeight: "100vh" }}>
+          {children}
+        </main>
+        <nav>
+          <Link href="/">🏠</Link>
+          <Link href="/search">🔍</Link>
+          <Link href="/ads">📢</Link>
+          <Link href="/objects">🏗️</Link>
+          <Link href="/showings">📅</Link>
         </nav>
       </body>
     </html>
