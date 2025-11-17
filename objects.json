@@ -1,0 +1,29 @@
+{
+  "1": {
+    "id": 1,
+    "ownerId": 7634168172,
+    "district": "Московский",
+    "street": "Карякина",
+    "complexName": "Московский",
+    "house": "22",
+    "floor": "3",
+    "roomsType": "2",
+    "roomsCustom": "",
+    "areaTotal": 60.0,
+    "kitchenArea": 16.0,
+    "price": 7000000.0,
+    "commissionType": "inside",
+    "commissionValue": 200000.0,
+    "commissionUnit": "rub",
+    "status": "pending",
+    "comment": null,
+    "photos": [
+      "/uploads/obj1_photo_0.png",
+      "/uploads/obj1_photo_1.png",
+      "/uploads/obj1_photo_2.jpg"
+    ],
+    "planPhotos": [],
+    "docsPhotos": [],
+    "createdAt": "2025-11-15T21:19:40.886564Z"
+  }
+}

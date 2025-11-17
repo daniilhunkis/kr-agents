@@ -3,18 +3,29 @@
     "id": 123,
     "firstName": "Тест",
     "lastName": "Юзер",
-    "phone": "+79998887766"
+    "phone": "+79998887766",
+    "role": "user"
   },
   "776430926": {
     "id": 776430926,
     "firstName": "Даниил",
-    "lastName": "Юшко",
-    "phone": "89654651388"
+    "lastName": "Юшко ",
+    "phone": "89654651388",
+    "role": "admin"
   },
   "904234309": {
     "id": 904234309,
     "firstName": "Кристина",
     "lastName": "Юшко",
-    "phone": "89654570746"
+    "phone": "89654570746",
+    "role": "moderator",
+    "moderatorPassword": "222222"
+  },
+  "7634168172": {
+    "id": 7634168172,
+    "firstName": "Тест",
+    "lastName": "Тестович",
+    "phone": "89999999999",
+    "role": "user"
   }
 }
